@@ -23,14 +23,16 @@
 gpgcheck=1 
 installonly_limit=3 
 clean_requirements_on_remove=true
-best__available=true
+best_available=true
 skip_if_unavailable=true
-network_connection=Good
+network_connection=Excellent
 fastestmirror=true
 max_parallel_downloads=10 
 deltarpm=true
 defaultyes=true
 keepcache=yes
+proxy_auth_method=any
+proxysslverify=false
 ```
 * Note: Fastest Mirror, Network Connection, and Delta RPM can in some cases fail to restore a connection. I find it best to disable for the moment and continue with previous task.
 * Usually after a system restart they fire right back up after enabled again. If a problem presents itself the best option would be to either commit temporarily or change =
