@@ -69,7 +69,7 @@ proxysslverify=false
 
 * It is Not Advised to cut or edit the following commands due to the possible resulting broken packages and --fix-broken ,, --allowerasing W: error flags. Please use the Full Syntax
 * `sudo dnf groupupdate 'core' 'multimedia' 'sound-and-video' --setopt='install_weak_deps=False' --exclude='PackageKit-gstreamer-plugin' --allowerasing && sync`
-* `sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg`
+* `sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg --allowerasing -yy`
 
 ### Accelerated Hardware  Codec
 
